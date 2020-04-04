@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route, withRouter} from "react-router-dom";
-import {auth,createUserProfileDocument} from './firebase/firebase.utils';
+// import {auth,createUserProfileDocument} from './firebase/firebase.utils';
 import Navbar from "./components/navbar/navbar";
 import SignIn from './pages/signup-login/signup-login';
 import Memepage from './pages/memepage/memepage';
@@ -45,7 +45,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Navbar currentUser={this.state.currentUser}/>
+        {/* <Navbar currentUser={this.state.currentUser}/> */}
+        <Navbar/>
         <Switch>
           <Route exact path='/signin' component={SignIn} />
           <Route exact path="/" render={() => {

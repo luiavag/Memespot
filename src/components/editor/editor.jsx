@@ -19,13 +19,13 @@ class Editor extends React.Component{
             left: [],
             textCount: 0,
             color: '',
-            size: ''
+            size: '',
         }
     }
 
     onClickHandler = (event) => {
         htmlToImage.toPng(document.getElementById('meme'))
-        .then(function (dataUrl) {
+        .then((dataUrl) => {
             download(dataUrl, 'meme');
         });
     }
