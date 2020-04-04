@@ -45,8 +45,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        {/* <Navbar currentUser={this.state.currentUser}/> */}
-        <Navbar/>
+        <Navbar currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path='/signin' component={SignIn} />
           <Route exact path="/" render={() => {
